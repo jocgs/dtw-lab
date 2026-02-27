@@ -1,4 +1,6 @@
 import pandas as pd
+import matplotlib
+matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import seaborn as sns
 import io
@@ -133,7 +135,7 @@ def calculate_statistic(
     elif measure == "median":
         return column.median()
     elif measure == "mode":
-        column.mode()[0]
+        return column.mode()[0]
     
     else:
         raise ValueError("Invalid measure. Choose 'mean', 'median', or 'mode'.")

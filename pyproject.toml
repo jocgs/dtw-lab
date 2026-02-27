@@ -18,6 +18,10 @@ dependencies = [
     "toml>=0.10.2",
 ]
 
+[project.scripts]
+start-server-dev = "dtw_lab.lab2:run_server_dev"
+start-server-prod = "dtw_lab.lab2:run_server_prod"
+
 [tool.setuptools]
 package-dir = { "" = "src" }
 
