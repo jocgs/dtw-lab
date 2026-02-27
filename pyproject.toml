@@ -21,6 +21,7 @@ dependencies = [
 [project.scripts]
 start-server-dev = "dtw_lab.lab2:run_server_dev"
 start-server-prod = "dtw_lab.lab2:run_server_prod"
+start-server = "dtw_lab.lab2:run_server_prod"
 
 [tool.setuptools]
 package-dir = { "" = "src" }
@@ -31,7 +32,3 @@ where = ["src"]
 [build-system]
 requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
-
-[project.scripts]
-start-server-dev = "dtw_lab.lab2:run_server_dev"
-start-server = "dtw_lab.lab2:run_server_prod"
