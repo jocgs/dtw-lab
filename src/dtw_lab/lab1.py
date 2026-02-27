@@ -103,6 +103,7 @@ def encode_categorical_vars(df: pd.DataFrame) -> pd.DataFrame:
     }
     df['Battery_Size'] = df['Battery_Size'].map(battery_size_map)
 
+
     #Map discharge speed to integer
     battery_size_map = {
         'Slow': 1,
